@@ -65,5 +65,3 @@ let g:gundo_playback_delay=800
 "-----------------------------------------
 " Plugin \"vimcdoc"
 " set helplang=cn
-
-Plugin 'lilydjwg/fcitx.vim'
