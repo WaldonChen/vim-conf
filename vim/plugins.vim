@@ -28,7 +28,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " 'complete', 'html', 'lisp'
 " 'python', 'syntax', 'writing'
-let s:plugins=['basic', 'general', 'optional', 'complete', 'html', 'syntax']
+let s:plugins=['basic', 'general', 'complete', 'html', 'syntax', 'optional']
 
 function! s:add_plugins(plugins)
 python << endpython
