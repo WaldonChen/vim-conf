@@ -113,12 +113,6 @@ autocmd FileType makefile,html,xml,php set noexpandtab
 autocmd FileType ruby,html,xml,xhtml,php set ts=2 | set sw=2 | set sts=2
 " }
 
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-
-" Line break on xx characters
-" set linebreak
-" set textwidth=80
-
 " indent settings {
 set autoindent
 set smartindent
@@ -189,8 +183,6 @@ endtry
 " ctags settings {
 set tags=tags;
 set tags+=~/.vim/tags/cpp.tags
-set tags+=~/.vim/tags/c.tags
-set tags+=~/.vim/tags/gtk.tags
 " }
 
 if has('unix')
