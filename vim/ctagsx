@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# --c-kinds=+p --c++-kinds=+p 表示对于C/C++，做索引时记录函数原型 function prototypes
+# --fields=+iaKSz
+# 	i 继承信息	a 类成员的访问属性	K 标签类型	S 例程标记	z
+# --language-force=C++
+#
+# Put this file to /usr/bin/
+
+ctags -R --sort=yes --c-kinds=+p --c++-kinds=+p \
+	--fields=+iaKSz --extra=+q --langmap=c++:+.cu $@
