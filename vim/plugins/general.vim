@@ -124,6 +124,18 @@ Plugin 'terryma/vim-multiple-cursors'
 "let g:multi_cursor_prev_key='<C-m>'
 "let g:multi_cursor_skip_key='<C-x>'
 "let g:multi_cursor_quit_key='<Esc>'
+" Fix conflict with neocomplete
+function! Multiple_cursors_before()
+    if exists(':NeoCompleteLock') == 2
+        exe 'NeoCompleteLock'
+    endif
+endfunction
+
+function! Multiple_cursors_after()
+    if exists(':NeoCompleteUnlock') == 2
+        exe 'NeoCompleteUnlock'
+    endif
+endfunction
 
 "-----------------------------------------
 " Git插件
