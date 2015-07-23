@@ -26,9 +26,10 @@ let &rtp.=',' . s:vim_config_home . "bundle/Vundle.vim/"
 call vundle#rc()
 Plugin 'gmarik/Vundle.vim'
 
-" 'complete', 'html', 'lisp'
-" 'python', 'syntax', 'writing'
-let s:plugins=['basic', 'general', 'complete', 'html', 'syntax', 'optional']
+" 'base', 'general', 'complete'
+" 'html', 'syntax', 'writing'
+" 'python', 'lisp', 'optional'
+let s:plugins=['basic', 'general', 'complete', 'html']
 
 function! s:add_plugins(plugins)
 python << endpython
