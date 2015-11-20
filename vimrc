@@ -13,8 +13,8 @@ set history=100
 " Map <leader> to ','
 let mapleader=','
 
-" Map jj to <ESC> in insert mode
-imap jj <esc>
+" Map fd to <ESC> in insert mode
+imap fd <esc>
 
 " Fast saving
 nmap <silent> ;w :w<CR>
