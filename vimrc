@@ -10,14 +10,15 @@ set history=100
 " Set to auto read when a file is changed from the outside
 " set autoread
 
-" Map <leader> to ','
-let mapleader=','
+" Map <leader> to ' '(space)
+let mapleader=' '
 
 " Map fd to <ESC> in insert mode
 imap fd <esc>
 
 " Fast saving
 nmap <silent> ;w :w<CR>
+nmap <silent> <leader>fs :w<CR>
 
 "===========================================
 " VIM user interface
@@ -145,6 +146,17 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+map <leader>wj <C-W>j
+map <leader>wk <C-W>k
+map <leader>wh <C-W>h
+map <leader>wl <C-W>l
+map <leader>wv <C-W>s
+map <leader>ws <C-W>v
+map <leader>wc <C-W>c
+map <leader>wo <C-W>o
+map <leader>wr <C-W>r
+map <leader>wR <C-W>R
+map <leader>w= <C-W>=
 
 " Tab page {
 " useful mappings for managing tabs
